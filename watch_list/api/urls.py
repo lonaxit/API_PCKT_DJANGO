@@ -34,6 +34,7 @@ urlpatterns = [
     
     
     # writing views according to our conditions
+    
      # create a review 
     path('<int:pk>/review-create/', ReviewCreate.as_view(), name="review-create"),
     
@@ -43,7 +44,7 @@ urlpatterns = [
     # get detail of a review
     path('review/<int:pk>/', ReviewDetail.as_view(), name='review-detail'),
     
-    # for basic/default concrete based views
+    #for basic/default concrete based views
     
     # path('review/', ReviewList.as_view(), name='review-list'),
     # path('review/<int:pk>',ReviewDetail.as_view(), name='review-detail')
