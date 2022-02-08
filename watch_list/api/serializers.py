@@ -5,7 +5,10 @@ from watch_list.models import *
 #  ****************************************************************
 # REVIEW SERIALIZER
 class ReviewSerializer(serializers.ModelSerializer):
-    # control what is returned in our nested relationship 
+    
+    # control what is returned in our nested relationship
+    
+    # adding this serializer relation will cause this field not to display in the serializer fields
     review_user = serializers.StringRelatedField(read_only=True)
     
     class Meta:
