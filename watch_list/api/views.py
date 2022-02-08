@@ -123,8 +123,8 @@ class ReviewList(generics.ListAPIView):
 class ReviewCreate(generics.CreateAPIView):
     
     serializer_class = ReviewSerializer
-    permission_classes = [IsAuthenticated]
-    throttle_classes=[ReviewCreateThrottle]
+    # permission_classes = [IsAuthenticated]
+    # throttle_classes=[ReviewCreateThrottle]
     
     def get_queryset(self):
         # just return the review object
