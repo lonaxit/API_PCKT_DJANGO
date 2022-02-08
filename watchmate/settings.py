@@ -165,9 +165,9 @@ REST_FRAMEWORK={
     # 'PAGE_SIZE': 3,
     
     # disable browsable api view, enable when in development mode
-    'DEFAULT_RENDERER_CLASSES':(
-        'rest_framework.renderers.JSONRenderer',
-    )  
+    # 'DEFAULT_RENDERER_CLASSES':(
+    #     'rest_framework.renderers.JSONRenderer',
+    # )  
 }
 
 # OVERIDE SMPLE JWT TO GENERATE REFRESH TOKEN TOGETHER WITH ACCESS TOKEN 
